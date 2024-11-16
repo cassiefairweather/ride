@@ -1,0 +1,65 @@
+<html>
+<body>
+<link href="styley.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <div class="head">
+   
+     <div id="snameys">
+      <a href="index.html" class="button">Take me back!</a>
+
+     </div>
+   <h1>Become a driver!</h1>
+   </div>
+
+ </div>
+<div class="container">
+<div class="middle">
+<h3>What do I need to know?</h3>
+
+  </div>
+  <div class="text">
+<P>Good news! In order to become a  driver you only need to do 3  things! </p>
+    <p>Enter your name, phone number,  address  and fee! This will allow anyone who needs a  ride to contact you! Your address will help them ensure their reaching out too somone in their area.</p>
+    <P>Any other details must be worked out externally, however, feel free to include additional information in the address box.</P>
+  
+
+    
+  </div>
+   </div>
+  <hr></hr>
+  <div class="sign">
+  <h2>Sign up!</h2>
+    </div>
+  <br><br>
+  
+<form id= "loginForm" action="https://hooks.airtable.com/workflows/v1/genericWebhook/appjNZtJgj7R7HXr5/wfl5V0hryrH8faqL8/wtr1GAkuJbltYMNe3" method="POST">
+  <label for="fname">Full name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Phone:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="kname">Fee per mile(include dollar sign):</label><br>
+  <input type="text" id="kname" name="kname" value=""><br><br>
+  <label for="wname">date:</label><br>
+  <input type="text" id="wname" name="wname" value=""><br><br>
+<label for="description">Address:</label><br>
+  <textarea type="text" id="description" name="description" value=""></textarea><br><br>
+
+  <input type="submit" value="Sign me up!">
+   
+</form> 
+ 
+   <div class="bottom">
+  <hr></hr>
+  <p>Thank you!</p>
+   
+  
+  </div>
+  <script>
+    let signUpDate = document.getElementById("wname");
+    signUpDate.value = new Date().toDateString();
+  </script>
+   <script src="scripter.js"></script>
+</body>
+</html>
